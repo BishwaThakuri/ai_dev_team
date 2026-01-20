@@ -1,0 +1,31 @@
+# --- Python Standard ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Virtual Environments ---
+venv/
+env/
+.venv/
+
+# --- Environment Variables (CRITICAL SECURITY) ---
+.env
+.env.local
+
+# --- IDE Settings (Keep your repo clean of editor configs) ---
+.vscode/
+.idea/
+
+# --- Operating System Junk ---
+.DS_Store
+Thumbs.db
+
+# --- Project Outputs ---
+# We ignore the 'output' folder so we don't commit 
+# the AI's experiments to the main code history.
+output/
+*.log
+
+# --- (Vector DBs) ---
+# If we add local memory later, we don't want to commit the database
+chroma_db_data/
